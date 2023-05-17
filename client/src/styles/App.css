@@ -1,0 +1,41 @@
+#root {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  padding: 0;
+  width: calc(100% + 20px);
+}
+
+li {
+  margin-left: 20px;
+  width: calc(100% / 3 - 20px);
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  li {
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (max-width: 500px) {
+  ul {
+    flex-direction: column;
+    margin-left: auto;
+    align-items: center;
+    max-width: 100%;
+  }
+  li {
+    width: calc(100%);
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
