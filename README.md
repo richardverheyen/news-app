@@ -1,5 +1,17 @@
 # News App
 
+Note on running server:
+I didn't combine together typescript and nodemon, so in the current configuration you'll need to run
+`yarn build` and `yarn dev` to have live code reloading on the server.
+
+Server runs on http://localhost:3001/
+Client runs on http://localhost:5173/
+
+Also I didn't give myself time to fix mocha on the server and write some tests. I would have tested the different success and failure cases of the search endpoint, as well as perhaps validating that the xss package was correctly exiting dangerous characters. 
+
+Happy reading,
+Rich
+
 ## Intro
 
 This code activity is a way for you to show us your development skills -

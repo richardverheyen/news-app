@@ -1,6 +1,6 @@
-const request = require('supertest');
+import request from 'supertest';
 
-const app = require('../src/app.js').default;
+import app from '../src/app.js';
 
 describe('GET /api/v1/search', () => {
   it('responds with a json message', (done) => {

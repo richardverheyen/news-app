@@ -20,5 +20,5 @@
         "excludeDirectories": ["**/node_modules", "dist"],
         // "excludeFiles": ["build/fileWhichChangesOften.ts"]
     },
-    "include": ["src/**/*"]
+    "include": ["src/**/*", "test/**/*"]
 }
