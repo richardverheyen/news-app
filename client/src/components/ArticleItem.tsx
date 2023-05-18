@@ -18,7 +18,6 @@ interface ArticleItemProps {
 }
 
 function ArticleItem({ article, pinArticle, unpinArticle }: ArticleItemProps) {
-
   return (
     <Card className="card" sx={{ maxWidth: 345 }}>
       <CardHeader
@@ -35,7 +34,7 @@ function ArticleItem({ article, pinArticle, unpinArticle }: ArticleItemProps) {
             <FavoriteBorderIcon />
           </IconButton>
         }
-        subheader="Guardian Article"
+        subheader={article.source}
       />
       <CardContent>
         <Typography gutterBottom variant="h5">

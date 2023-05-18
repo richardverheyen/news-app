@@ -22,6 +22,7 @@ function App() {
     // console.log(`hsr: ${articles.length} old, ${data.length} new, ${pinnedArticles.length} pinned, ${uniqueArticles.length} uniqueArticles`);
     setArticles(uniqueArticles);
   }
+
   function pinArticle(id: String) {
     // console.log("pinArticle");
 

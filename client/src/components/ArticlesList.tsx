@@ -14,8 +14,8 @@ function ArticlesList({ articles, pinArticle, unpinArticle }: ArticlesListProps)
   }
   return (
     <ul>
-      {articles.map((article: Article, index: number) => (
-        <li key={index}>
+      {articles.map((article: Article) => (
+        <li key={article.id}>
           <ArticleItem article={article} pinArticle={pinArticle} unpinArticle={unpinArticle} />
         </li>
       ))}
